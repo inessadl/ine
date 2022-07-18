@@ -138,6 +138,10 @@ input, select, textarea {
 				font-size: 14pt;
 			}
 
+			#wrapper section > header h3 {
+				color: #000; /* review */
+				font-weight: 700;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3274,6 +3278,7 @@ input, select, textarea {
 					margin: 0 0 5rem 0;
 				}
 
+
 				#wrapper section > header h1 + p {
 					font-family: "Raleway", Helvetica, sans-serif;
 					font-size: 0.8rem;
@@ -3399,10 +3404,12 @@ input, select, textarea {
 
 		#wrapper .copyright {
 			color: rgba(0, 0, 0, 0.25);
-			font-size: 1rem;
+			font-size: .8rem;
 			left: 50vw;
 			position: relative;
 			width: 50vw;
+			text-align: center;
+			margin-top: 6rem;
 		}
 
 			#wrapper .copyright a {
@@ -3775,6 +3782,7 @@ input, select, textarea {
 					padding: 2.25rem 1.5rem;
 				}
 
+
 				#wrapper > section > .content {
 					padding: 2.25rem 1.5rem;
 				}
@@ -3897,4 +3905,13 @@ input, select, textarea {
 			padding: 4rem;
 		}
 
+	}
+
+	#presentation {
+		margin-top: 2rem;
+	}
+
+	#profile-pic {
+		margin-top: 3rem;
+		width: 100%;
 	}
