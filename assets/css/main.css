@@ -4149,6 +4149,7 @@ input, select, textarea {
 	#footer {
 		background-color: white;
 		color: black;
+		text-align: center;
 	}
 
 	#footer .inner {
@@ -4301,3 +4302,11 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* Case */
+.case img {
+	width: 100%;
+	border-radius: 5px;
+	padding: 1.5rem 0;
+}
