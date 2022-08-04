@@ -3571,33 +3571,37 @@ input, select, textarea {
 		
 
 /* About Page */
-	#wrapper .about-page {
+	#wrapper .internal-page {
 		background-color: black;
 		color: white;
 	}
 
-	a.image.about-page {
+	#wrapper .internal-page .inner h3.major {
+		color: white;
+	}
+
+	a.image.internal-page {
 		border-radius: 5px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
-		a.image.about-page img {
+		a.image.internal-page img {
 			border-radius: 50%;
 			display: block;
 			max-width: fit-content;
 		}
 
-		.image.about-page.left, .image.about-page.right {
+		.image.internal-page.left, .image.internal-page.right {
 			max-width: 40%;
 		}
 
-		.image.about-page.left img, .image.about-page.right img {
+		.image.internal-page.left img, .image.internal-page.right img {
 			width: 100%;
 		}
 
-		/* .image.about-page.left {
+		/* .image.internal-page.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
@@ -4149,8 +4153,11 @@ input, select, textarea {
 	#footer {
 		background-color: white;
 		color: black;
-		text-align: center;
 	}
+
+	/* .copyright {
+		text-align: center;
+	} */
 
 	#footer .inner {
 		padding: 5em 0 3em 0 ;
