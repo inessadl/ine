@@ -179,7 +179,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: black !important;
+			color: #c5c5c5 !important;
 		}
 
 		a.special:not(.button) {
@@ -2663,7 +2663,7 @@ input, select, textarea {
 
 		ul.contact li {
 			text-decoration: none;
-			margin: 2.5em 0 0 0;
+			margin: 1em 0 0 0;
 			padding: 0 0 0 3.25em;
 			position: relative;
 		}
@@ -3003,7 +3003,8 @@ input, select, textarea {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+			/* background-color: #353849; */
+			background-color: #49494A;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3077,7 +3078,8 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		/* background-color: rgba(53, 56, 73, 0.95); */
+		background-color: #49494A;
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3098,10 +3100,17 @@ input, select, textarea {
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
+			color: white;
 		}
 
 			#header h1 a {
 				border: 0;
+				color: white!important;
+			}
+
+			#header.alt {
+				border: 0;
+				color: white;
 			}
 
 		#header nav {
@@ -3121,6 +3130,7 @@ input, select, textarea {
 				border: 0;
 				display: inline-block;
 				padding: 0 1em;
+				color: black;
 			}
 
 				#header nav a:before {
@@ -3282,7 +3292,8 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: #49494A;
+			color: white;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3294,6 +3305,7 @@ input, select, textarea {
 		#menu h2 {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			padding-bottom: 1em;
+			color: white;
 		}
 
 		#menu .close {
@@ -3338,7 +3350,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #45558d;
+						background: #3B3B3C;
 					}
 
 		@media screen and (max-width: 736px) {
@@ -3474,8 +3486,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-color: white;
+				/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3488,7 +3500,8 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				/* padding: 12em 3em 12.375em 3em ; */
+				padding: 6em 3em 6.375em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3555,6 +3568,87 @@ input, select, textarea {
 			filter: blur(2px);
 		}
 
+		
+
+/* About Page */
+	#wrapper .about-page {
+		background-color: black;
+		color: white;
+	}
+
+	a.image.about-page {
+		border-radius: 5px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		a.image.about-page img {
+			border-radius: 50%;
+			display: block;
+			max-width: fit-content;
+		}
+
+		.image.about-page.left, .image.about-page.right {
+			max-width: 40%;
+		}
+
+		.image.about-page.left img, .image.about-page.right img {
+			width: 100%;
+		}
+
+		/* .image.about-page.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		} */
+
+		.image.about-page.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.about-page.left img, .image.about-page.right img {
+			width: 100%;
+		}
+
+		.image.about-page.left, .image.about-page.right {
+			max-width: 40%;
+		}
+
+		/* .image.about-page.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		} */
+
+		.image.about-page.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.about-page.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.about-page.fit img {
+				width: 100%;
+			}
+
+		.image.about-page.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.image.about-page.main img {
+				width: 100%;
+			}
+
 /* Wrapper */
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
@@ -3566,7 +3660,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(0, 0, 0, 1);
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3585,8 +3679,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-color: white;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4123,8 +4217,8 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-color: white;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto,
  cover;
 			background-position: center,
