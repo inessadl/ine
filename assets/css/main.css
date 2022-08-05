@@ -3391,9 +3391,8 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0;
+		padding: 6em 0 3em 0;
 		background-color: white;
-		/* background-color: goldenrod; */
 	}
 
 	#banner:after {
